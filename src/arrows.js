@@ -17,6 +17,13 @@ class TaskCollection {
         });
 
         this.tasks.forEach(task => console.log(task));
+
+        this.tasks.forEach((task, index) => console.log(task, index));
+
+        this.tasks.forEach(() => console.log('task'));
+
+        // scope of this is like OOP languages
+        // with => syntax instead of traditional javascript
     }
 }
 
