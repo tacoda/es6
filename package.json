@@ -6,7 +6,10 @@
     "npm-watch": "^0.6.0"
   },
   "watch": {
-    "build": "src/*.js"
+    "build": [
+      "src/*.js",
+      "src/modules/*.js"
+    ]
   },
   "scripts": {
     "build": "babel src -d lib",
